@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      height: 100vh;
+      width: 200px;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    
+	   .navbar img {
+      width: 80px; /* Adjust width as needed */
+      height: 80px; /* Adjust height as needed */
+      border-radius: 50%; /* Make the image round */
+      display: block;
+      margin: 0 auto 20px; /* Center the image and add some bottom margin */
+    }
+    .navbar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+    }
+    
+    .navbar a:hover {
+	 padding: 6px 8px
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+  <img src="Mona.jpg" alt="Your Image" width="80" height="80">
+    <a href="#" onclick="showContent('content1')">Item 1</a>
+    <a href="#" onclick="showContent('content2')">Item 2</a>
+    <a href="#" onclick="showContent('content3')">Item 3</a>
+  </div>
+
+  <div class="content">
+    <div id="content1" style="display:none;">
+      <h2>Content for Item 1</h2>
+      <p>This is the content for Item 1.
+	  dfgdffhdfffffffffffdfg
+	  	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+	  dfgdffhdfffffffffffdfg
+
+	  
+	  
+	  
+	  </p>
+    </div>
+
+    <div id="content2" style="display:none;">
+      <h2>Content for Item 2</h2>
+      <p>This is the content for Item 2.</p>
+    </div>
+
+    <div id="content3" style="display:none;">
+      <h2>Content for Item 3</h2>
+      <p>This is the content for Item 3.</p>
+    </div>
+  </div>
+
+  <script>
+    function showContent(id) {
+      var contents = document.querySelectorAll('.content > div');
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+      }
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
