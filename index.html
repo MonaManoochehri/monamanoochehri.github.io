@@ -68,4 +68,74 @@
     }
 
     /* Typing animation */
-    @k
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+    .typewriter-text {
+      overflow: hidden;
+      border-right: .15em solid #ffcc00; /* Golden Cursor */
+      white-space: nowrap;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #f0f0f0;
+      animation: typing 3s steps(40) infinite alternate;
+    }
+    
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+      }
+
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="Mona.jpg" alt="Your Image" width="120" height="120">
+    <a href="#" onclick="showContent('content1')">Home</a>
+    <a href="#" onclick="showContent('content2')">About</a>
+    <a href="#" onclick="showContent('content3')">Blogs</a>	  
+    <a href="#" onclick="showContent('content4')">Contact</a>
+  </div>
+
+  <div class="content">
+    <div id="content1" style="display:none;">
+      <h2>Home</h2>
+      <p>This is the content for Item 1.</p>
+    </div>
+
+    <div id="content2" style="display:none;">
+      <h2>About</h2>
+      <p>This is the content for Item 2.</p>
+    </div>
+
+    <div id="content3" style="display:none;">
+      <h2>Blogs</h2>
+      <p>This is the content for Item 3.</p>
+    </div>
+
+     <div id="content4" style="display:none;">
+      <h2>Contact</h2>
+      <p>This is the content for Item 4.</p>
+     </div>
+  </div>
+
+  <script>
+    function showContent(id) {
+      var contents = document.querySelectorAll('.content > div');
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+      }
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
