@@ -11,10 +11,11 @@
       padding: 0;
       background-color: #191919;
       color: #f0f0f0;
-      font-size: 16px; /* Base font size */
+      font-size: 16px;
       display: flex;
       min-height: 100vh;
       flex-direction: row;
+      flex-wrap: nowrap;
     }
 
     .navbar {
@@ -27,6 +28,7 @@
       box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
       padding-top: 20px;
       flex-shrink: 0;
+      transition: 0.3s;
     }
 
     .navbar img {
@@ -54,50 +56,22 @@
     }
 
     .content {
-      margin-left: 260px;  /* Keeps the content to the right of the sidebar */
+      margin-left: 260px;
       padding: 20px;
       margin-top: 20px;
       font-size: 1rem;
-      width: calc(100% - 250px);  /* Ensures the content takes up remaining space */
-      padding-left: 30px;  /* Adds extra margin from left side */
-    }
-
-    .content h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #ffcc00;
-      margin-bottom: 20px;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-
-    /* Typing animation */
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-    }
-
-    .typewriter-text {
-      overflow: hidden;
-      border-right: .15em solid #ffcc00;
-      white-space: nowrap;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #f0f0f0;
-      animation: typing 3s steps(40) infinite alternate;
+      width: calc(100% - 250px);
+      padding-left: 30px;
+      transition: 0.3s;
     }
 
     @media (max-width: 1024px) {
       .navbar {
-        width: 100%;
-        height: auto;
+        width: 200px;
         position: static;
+        height: auto;
       }
+
       .content {
         margin-left: 0;
         width: 100%;
@@ -111,15 +85,20 @@
 
       .navbar {
         width: 100%;
+        position: relative;
         padding-top: 10px;
+        display: flex;
+        flex-direction: column;
       }
 
       .navbar a {
-        font-size: 1.1em;
+        text-align: left;
       }
 
       .content {
         margin-left: 0;
+        padding: 10px;
+        width: 100%;
       }
 
       .content h2 {
@@ -163,8 +142,10 @@
 
     <div id="content2" style="display:none;">
       <h2>About</h2>
-      <p>I am Mona Manoochehri, a passionate Software Test Engineer dedicated to enhancing the quality of software products. With a strong focus on software testing and web development, I constantly strive to apply my skills to solve complex challenges. Currently, I am pursuing my second master's degree at the University of Passau, where I deepen my knowledge and stay up-to-date with new technologies and industry trends.</p>
-      <p>Driven by a genuine curiosity, I am always eager to learn and explore new ideas and technologies. This continuous learning helps me stay ahead in an ever-evolving field, while contributing to the development of reliable and efficient software systems.</p>
+      <p>I am Mona Manoochehri, a passionate Software Test Engineer dedicated to enhancing the quality of software products. </p>
+      <p>With a strong focus on software testing and web development, I constantly strive to apply my skills to solve complex challenges. Currently, I am pursuing my second master's degree at the University of Passau, where I deepen my knowledge and stay up-to-date with new technologies and industry trends.
+
+Driven by a genuine curiosity, I am always eager to learn and explore new ideas and technologies. This continuous learning helps me stay ahead in an ever-evolving field, while contributing to the development of reliable and efficient software systems. </p>
     </div>
 
     <div id="content3" style="display:none;">
