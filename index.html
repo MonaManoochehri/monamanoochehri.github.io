@@ -1,175 +1,497 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mona Manoochehri Homepage</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #191919;
-      color: #f0f0f0;
-      font-size: 16px;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
+	<meta name="generator" content="Hugo 0.101.0" />
+  <title>Mona Manoochehri&#39;s Personal Page</title>
 
-    .navbar {
-      height: 100vh;
-      width: 250px;
-      background-color: #2c3e50;
-      position: fixed;
-      top: 0;
-      left: 0;
-      box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
-      padding-top: 20px;
-      flex-shrink: 0;
-      transition: 0.3s;
-    }
+  <!-- Meta -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" />
 
-    .navbar img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 40px;
-      border: 4px solid #ffcc00; /* Gold border around the image */
-    }
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" />
 
-    .navbar a {
-      font-family: 'Arial', sans-serif;
-      padding: 12px 16px;
-      text-decoration: none;
-      font-size: 1.2em;
-      color: #ecf0f1;  /* Light greyish-white for the links */
-      display: block;
-      text-align: center;
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
+  <!-- Main Stylesheets -->
+  
+  <link rel="stylesheet" href="scss/style.min.css" />
 
-    .navbar a:hover {
-      background-color: #007bff;
-      color: #fff;
-    }
+  <!-- Plugins Stylesheets -->
+  <link rel="stylesheet" href="plugins/ionicons/ionicons.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="plugins/animate/animate.css" />
+  <link rel="stylesheet" href="plugins/syntax/syntax.css" />
 
-    .content {
-      margin-left: 250px;
-      padding: 20px;
-      margin-top: 20px;
-      font-size: 1.1rem;
-      width: calc(100% - 250px);
-      padding-left: 30px;
-      transition: 0.3s;
-      display: block;
-    }
+  
 
-    /* Mobile view adjustments */
-    @media (max-width: 1024px) {
-      .navbar {
-        width: 200px;
-        position: static;
-        height: auto;
-      }
+  
 
-      .content {
-        margin-left: 0;
-        width: 100%;
-      }
-    }
+  
+  <!-- Dark -->
+ <link rel="stylesheet" href="plugins/template-dark/dark1.css" />
+  
 
-    @media (max-width: 768px) {
-      body {
-        font-size: 14px;
-      }
+  
 
-      .navbar {
-        width: 100%;
-        position: relative;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-      }
+  
 
-      .navbar a {
-        text-align: left;
-      }
+  
+  
+  
 
-      .content {
-        margin-left: 0;
-        padding: 10px;
-        width: 100%;
-        font-size: 1rem;
-      }
+  
 
-      .content h2 {
-        font-size: 2.5rem;
-        color: #ffcc00; /* Gold color */
-      }
+  <link rel="alternate" type="application/rss+xml" href="index.xml" title="Mona Manoochehri" />
+  <link rel="alternate" type="application/json" href="index.json" title="Mona Manoochehri" />
+  </head>
 
-      .content p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-      }
-    }
 
-    @media (max-width: 480px) {
-      body {
-        font-size: 13px;
-      }
+<body class="home">
+  <div class="page new-skin">
 
-      .content h2 {
-        font-size: 2rem;
-      }
+    <!-- Preloader -->
+<div class="preloader">
+	<div class="centrize full-width">
+		<div class="vertical-center">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-      .content p {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="navbar">
-    <img src="Mona.jpg" alt="Your Image" width="120" height="120">
-    <a href="#" onclick="showContent('content1')">Home</a>
-    <a href="#" onclick="showContent('content2')">About</a>
-    <a href="#" onclick="showContent('content3')">Blogs</a>	  
-    <a href="#" onclick="showContent('content4')">Contact</a>
+
+    
+
+<!-- Background -->
+
+
+<div class="background gradient">
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+
+
+
+
+    
+
+<div class="s_overlay"></div>
+<div class="content-sidebar">
+	<div class="sidebar-wrap">
+		<aside id="secondary" class="widget-area">
+
+      
+
+			
+
+			
+
+			
+
+			
+
+		</aside>
+	</div>
+	<span class="close"></span>
+</div>
+
+
+    
+    
+    <!-- Container -->
+    <div class="container opened" data-animation-in="rollIn" data-animation-out="rollOut">
+
+      
+
+<!-- Header -->
+<header class="header">
+
+	
+
+  <!-- menu -->
+	<div class="top-menu">
+		<ul>
+      
+      
+      
+      
+      
+			<li class="active">
+				<a href="#about-card">
+					<span class="icon ion-person"></span>
+					<span class="link">About</span>
+				</a>
+			</li>
+			
+      
+      
+      
+			<li>
+				<a href="#resume-card">
+					<span class="icon ion-android-list"></span>
+					<span class="link">Experience</span>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+
+</header>
+
+
+      <!-- Card - Started -->
+
+
+
+<div class="card-started" id="home-card">
+
+  <!-- Profile-->
+  <div class="profile">
+
+    <!-- profile image -->
+    <div class="slide" style="background-image: url(images/bg3.jpg);"></div>
+
+    <!-- profile photo -->
+    
+    <div class="image">
+      <img src="mona.jpg" alt="Mona Manoochehri" />
+    </div>
+    
+
+    <!-- profile titles -->
+    <div class="title">Mona Manoochehri</div>
+    <div class="subtitle subtitle-typed">
+      <div class="typing-title">
+        
+        <p>Software Test Engineer</p>
+        
+        <p>Web Developer</p>
+        
+        <p>AI  Enthusiast</p>
+        
+      </div>
+    </div>
+
+    <!-- profile socials -->
+    <div class="social">
+      
+      <a target="_blank" href="https://x.com/ManoochehriMona" title="X/Twitter"><span class="fab fa-x-twitter"></span></a>
+      
+      <a target="_blank" href="https://www.linkedin.com/in/mona-manoochehri/" title="Linkedin"><span class="fab fa-linkedin"></span></a>
+      
+      <a target="_blank" href="https://github.com/MonaManoochehri" title="GitHub"><span class="fab fa-github"></span></a>
+              
+      <a target="_blank" href="https://www.instagram.com/mona.manoochehry/" title="Instagram"><span class="fab fa-instagram"></span></a>
+      
+    </div>
+
+    <!-- profile buttons -->
+    <div class="lnks">
+      
+      <a href="mailto:mona.manoochehry@gmail.com" target="_blank" class="lnk">
+        <span class="text">Contact</span>
+        
+        <span class="ion ion ion-email"></span>
+        
+      </a>
+      
+    </div>
+
   </div>
 
-  <div class="content">
-    <div id="content1" style="display:none;">
-      <h2>Home</h2>
-      <p>Welcome to my personal website, where I share insights into my journey as a software test engineer!</p>
-    </div>
+</div>
 
-    <div id="content2" style="display:none;">
-      <h2>About</h2>
-      <p>I am Mona Manoochehri, a passionate Software Test Engineer. I have a deep interest in software testing, web development, and constantly strive to learn new technologies and techniques to improve my skills. Currently, I am furthering my expertise in software engineering with my second master's at the University of Passau. I enjoy problem-solving and enjoy contributing to quality and performance in software products.</p>
-    </div>
 
-    <div id="content3" style="display:none;">
-      <h2>Blogs</h2>
-      <p>This section will feature my thoughts and discussions on the latest trends and practices in software testing and web development.</p>
-    </div>
 
-    <div id="content4" style="display:none;">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me for discussions or collaborations.</p>
+
+      
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+<div class="card-inner animated active" id="about-card">
+	<div class="card-wrap">
+
+  
+
+  
+
+    
+    
+      
+
+<!-- About -->
+<div class="content about">
+
+	
+	<div class="title">Welcome!</div>
+	
+
+	<div class="row">
+		<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+			<div class="text-box">
+				 <p> <strong>Hello! I am Mona</strong><br>  I worked as a <a href='#'>Software Test Engineer </a> at <a href='https://www.linkedin.com/company/informatics-services-corporation/?originalSubdomain=ir'>Informatics Services Corporation</a>.  Currently I am studying at the University of Passau. <br>I bring hands on experience in software testing.   I’m driven by quality, detail,  and the thrill of solving real-world problems through clean code.
+
+  </p> 
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+
+
+    
+
+  
+
+    
+    
+      
+
+
+<div class="content services">
+
+	
+	<div class="title">My Interests</div>
+	
+
+	<div class="row service-items border-line-v">
+		
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+			<div class="service-item">
+				
+				<div class="name">Software Testing</div>
+				<p>
+					I’ve always been drawn to the details — the kind that make or break a user’s experience. Software testing isn’t just about finding bugs; it’s about ensuring quality, reliability, and trust in every line of code. I love the challenge of thinking critically, uncovering edge cases, and making sure systems behave exactly as they should. For me, testing is a blend of logic, patience, and creativity — and that’s what makes it so rewarding.
+				</p>
+			</div>
+		</div>
+		
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+			<div class="service-item">
+				
+				<div class="name">Web Development</div>
+				<p>
+					There’s something incredibly satisfying about bringing ideas to life on the web. Whether it’s designing a seamless user interface or writing the logic behind the scenes, web development lets me blend creativity with problem-solving. I enjoy crafting clean, responsive websites that not only look good but feel intuitive to use. It’s a space where design meets function — and that intersection is where I thrive.
+				</p>
+			</div>
+		</div>
+		
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+			<div class="service-item">
+				
+				<div class="name">Always Learning. Always Evolving.</div>
+				<p>
+					Technology moves fast — and I love keeping up. I’m passionate about diving into new concepts, exploring emerging tools, and expanding my skill set every step of the way. Whether it’s a new framework, testing methodology, or design trend, I’m always curious and eager to grow. For me, learning isn’t just part of the journey — it is the journey. My passion for exploring new ideas, tools, and approaches in tech led me to pursue a second master’s degree.
+				</p>
+			</div>
+		</div>
+		
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+			<div class="service-item">
+				
+				<div class="name">AI Enthusiast</div>
+				<p>
+					I’m fascinated by how intelligent systems are reshaping the world. Whether it's exploring machine learning concepts or diving into the latest tools, I’m always eager to expand my knowledge and stay ahead in a rapidly evolving tech landscape. For me, learning isn’t just a goal — it’s a way of life.
+				</p>
+			</div>
+		</div>
+		
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+
+
+    
+
+  
+
+  </div>
+</div>
+
+
+
+
+<div class="card-inner" id="resume-card">
+	<div class="card-wrap">
+
+  
+
+  
+
+    
+    
+      
+
+<!-- Resume -->
+<div class="content resume">
+
+	
+	<div class="title">Experience</div>
+	
+
+	<div class="row">
+
+    <!-- experience -->
+    
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="resume-title border-line-h">
+				<div class="icon"><i class="ion ion-briefcase"></i></div>
+				<div class="name">Experience</div>
+			</div>
+			<div class="resume-items">
+				
+				<div class="resume-item border-line-h active">
+					<div class="date">March 2015 - Sep 2021</div>
+					<div class="name">Software Test Engineer</div>
+					<div class="company">Informatics Services Corporation</div>
+					<p>
+						Software Quality Assurance Team
+					</p>
+				</div>
+				
+				<div class="resume-item border-line-h">
+					<div class="date">March 2005 - Feb 2015</div>
+					<div class="name">Web Developer</div>
+					<div class="company">Parsian Bank</div>
+					<p>
+						
+					</p>
+				</div>
+				
+				<div class="resume-item border-line-h">
+
+				</div>
+				
+			</div>
+		</div>
+
+    <!-- education -->
+    
+		<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+			<div class="resume-title border-line-h">
+				<div class="icon"><i class="ion ion-university"></i></div>
+				<div class="name">Education</div>
+			</div>
+			<div class="resume-items">
+				
+				<div class="resume-item border-line-h active">
+					<div class="date">2021 - Present</div>
+					<div class="name">University of Passau</div>
+					<p>
+						Msc. in Computer Science
+					</p>
+				</div>
+				
+				<div class="resume-item border-line-h">
+					<div class="date">2013 - 2015</div>
+					<div class="name">Iran University pf Science and Technology</div>
+					<div class="company">Tehran, Iran</div>
+					<p>
+						MSc in Software Engineering
+					</p>
+				</div>
+				
+				<div class="resume-item border-line-h">
+					<div class="date">2000 - 2004</div>
+					<div class="name">Shariati Technical and Professional College</div>
+					<div class="company">Tehran, Iran</div>
+					<p>
+						B.S. in Software Engineering
+					</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+
+
+    
+
+  
+
+  </div>
+</div>
+
+
+
+
+
+
     </div>
   </div>
 
-  <script>
-    function showContent(id) {
-      var contents = document.querySelectorAll('.content > div');
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-      }
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
+  <!-- Scripts -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+
+
+<script src="plugins/validate/jquery.validate.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/magnific-popup/magnific-popup.min.js"></script>
+<script src="plugins/slimscroll/jquery.slimscroll.js"></script>
+<script src="plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="plugins/isotope/isotope.pkgd.js"></script>
+<script src="plugins/typed/typed.js"></script>
+<script src="plugins/rrssb/rrssb.js"></script>
+
+
+
+
+
+<script src="js/form-handler.min.js"></script>
+
+
+<script src="js/common.min.js"></script>
+
 </body>
+
 </html>

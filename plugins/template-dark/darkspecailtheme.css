@@ -1,0 +1,50 @@
+body {
+	color: rgba(254, 254, 254, 1);
+	background: #26262b;
+}
+
+
+a {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+a:hover {
+  color: #4fd1c5;
+}
+
+.background {
+  background-color: #26262d !important;
+}
+
+.bg-bubbles li {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.vertical-border-line:before {
+	background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+	background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.horizontal-border-line:after {
+	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+th, td, .content .title .first-word, .content .title:first-letter {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.info-list ul li strong:after {
+  background: #31313a;
+}

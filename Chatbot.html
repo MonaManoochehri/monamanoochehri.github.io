@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mona's Personality Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f9f7ff;
+    }
+    #chatbox {
+      border: 1px solid #ccc;
+      padding: 15px;
+      height: 400px;
+      overflow-y: scroll;
+      background-color: #fff;
+      margin-bottom: 10px;
+    }
+    .user, .bot {
+      margin: 5px 0;
+    }
+    .user {
+      text-align: right;
+      color: #4a148c;
+    }
+    .bot {
+      text-align: left;
+      color: #1a237e;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ask Me Anything About Mona ✨</h2>
+  <div id="chatbox"></div>
+  <input type="text" id="userInput" placeholder="Ask a question..." />
+  <button onclick="getBotResponse()">Send</button>
+
+  <script>
+    const personalityAnswers = {
+      "what are your hobbies": "I enjoy learning new things, especially programming, animation, and making educational content.",
+      "why did you study a second master's degree": "To deepen my knowledge and support my move to Germany.",
+      "how old are you": "I'm in my 30s – still young enough to dream big and wise enough to stay grounded. 😉",
+      "what is your favorite color": "Purple – it's calming and creative!",
+      "what motivates you": "Personal growth, helping others, and building things that make life better.",
+      "which kind of personality do you have": "Thoughtful, curious, and quietly determined.",
+      "are you introverted or extroverted": "More introverted, but I open up with kind and open-minded people.",
+      "which languages do you speak": "Persian (native), English (fluent), German (intermediate).",
+      "why did you move to germany": "For better opportunities and a brighter future for my family.",
+      "why did you select passau to live": "It's peaceful, student-friendly, and great for focus and growth.",
+      "where are you from": "I’m from Iran – full of culture, poetry, and history."
+    };
+
+    function getBotResponse() {
+      const input = document.getElementById("userInput").value.toLowerCase().trim();
+      const chatbox = document.getElementById("chatbox");
+
+      chatbox.innerHTML += `<div class="user">You: ${input}</div>`;
+
+      let reply = "Hmm, I'm not sure how to answer that yet!";
+      for (let question in personalityAnswers) {
+        if (input.includes(question)) {
+          reply = personalityAnswers[question];
+          break;
+        }
+      }
+
+      chatbox.innerHTML += `<div class="bot">MonaBot: ${reply}</div>`;
+      chatbox.scrollTop = chatbox.scrollHeight;
+      document.getElementById("userInput").value = "";
+    }
+  </script>
+
+</body>
+</html>
